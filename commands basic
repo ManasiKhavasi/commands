@@ -57,3 +57,60 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/ManasiKhavasi/ass1.git
    daa12e0..860d592  main -> main
 branch 'main' set up to track 'origin/main'.
+
+C:\24_git\ass1>git branch firstbranch
+
+C:\24_git\ass1>git checkout firstbranch
+Switched to branch 'firstbranch'
+
+C:\24_git\ass1>git add pract2.txt
+
+C:\24_git\ass1>git commit -m "pract2 added"
+[firstbranch 7c62449] pract2 added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 pract2.txt
+
+C:\24_git\ass1>git push -u origin firstbranch
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 281 bytes | 140.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'firstbranch' on GitHub by visiting:
+remote:      https://github.com/ManasiKhavasi/ass1/pull/new/firstbranch
+remote:
+To https://github.com/ManasiKhavasi/ass1.git
+ * [new branch]      firstbranch -> firstbranch
+branch 'firstbranch' set up to track 'origin/firstbranch'.
+
+C:\24_git\ass1>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\24_git\ass1>git merge firstbranch
+Updating 860d592..7c62449
+Fast-forward
+ pract2.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 pract2.txt
+
+C:\24_git\ass1>git push -u origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ManasiKhavasi/ass1.git
+   860d592..7c62449  main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\24_git\ass1>git branch -D firstbranch
+Deleted branch firstbranch (was 7c62449).
+
+C:\24_git\ass1>git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+C:\24_git\ass1>git push --delete origin firstbranch
+To https://github.com/ManasiKhavasi/ass1.git
+ - [deleted]         firstbranch
+
+C:\24_git\ass1>
