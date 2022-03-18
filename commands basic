@@ -1,0 +1,59 @@
+
+C:\Users\LENOVO>cd..
+
+C:\Users>cd..
+
+C:\>cd 24_git
+
+C:\24_git>git config --global user.name "ManasiKhavasi"
+
+C:\24_git>git config --global user.email "manukhavasi@gmail.com"
+
+C:\24_git>git init
+Reinitialized existing Git repository in C:/24_git/.git/
+
+C:\24_git>git clone https://github.com/ManasiKhavasi/ass1.git
+fatal: destination path 'ass1' already exists and is not an empty directory.
+
+C:\24_git>git add practical.txt
+
+C:\24_git>git commit -m "THANKS"
+[master (root-commit) 26d671d] THANKS
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 practical.txt
+
+C:\24_git>git commit -a
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ass1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\24_git>git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+C:\24_git>cd ass1
+
+C:\24_git\ass1>git add practical.txt
+fatal: pathspec 'practical.txt' did not match any files
+
+C:\24_git\ass1>git add practical.txt
+
+C:\24_git\ass1>git commit -m "THANKS"
+[main 860d592] THANKS
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 practical.txt
+
+C:\24_git\ass1>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 285 bytes | 95.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ManasiKhavasi/ass1.git
+   daa12e0..860d592  main -> main
+branch 'main' set up to track 'origin/main'.
